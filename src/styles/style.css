@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  z-index: -3;
+}
+
+main {
+  position: relative;
+  flex: 1 1 auto;
+  background-color: white;
+  z-index: -3;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+  margin: none;
+}
+
+main > .content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 20px;
+  justify-content: center;
+}
+
+.title {
+  margin: 10px 20px;
+  font-size: 1.8em;
+}
+
+.hideBtn {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.task:hover > td > .hideBtn,
+.hideBtn:hover {
+  visibility: visible;
+}
+
+.completeTask {
+  text-decoration: line-through;
+}
+
+.shield {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200);
+  opacity: 0.2;
+  z-index: -1;
+  display: none;
+}
+
+.toggle {
+  display: block !important;
+}

@@ -1,0 +1,33 @@
+nav {
+  background-color: #001450;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  flex: 0 1 5vh;
+  height: 5vh;
+  -webkit-box-shadow: 0px 3px 3px 0px #000000;
+  box-shadow: 0px 3px 3px 0px #000000;
+}
+
+nav div {
+  display: inherit;
+  gap: 15px;
+  align-items: center;
+}
+
+nav div div {
+  cursor: pointer;
+  display: inherit;
+  justify-content: center;
+}
+
+nav .search {
+  height: 24px;
+  outline: none;
+
+  border: 1px solid #f5f5f5;
+  font-size: 13px;
+  color: gray;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Todo List</title>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1" /> -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script defer="defer" src="bundle.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div id="menu-icon"><i class="fas fa-bars"></i></div>
+        <div id="home"><i class="fas fa-home"></i></div>
+        <div>
+          <input type="search" placeholder="Search" class="search" />
+        </div>
+      </div>
+      <div>
+        <div class="toggle-form"><i class="fas fa-plus-circle"></i></div>
+        <div><i class="fas fa-bell"></i></div>
+        <div><i class="fas fa-user"></i></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="side-menu">
+        <div role="button" tabindex="0" id="current-page">Inbox</div>
+        <div role="button" tabindex="0" id="today">
+          <i class="fas fa-calendar-day"></i> Today
+        </div>
+        <div role="button" class="lists-btn" tabindex="0">Lists</div>
+        <section role="button" class="lists" tabindex="0">
+          <div role="button" tabindex="0">Work</div>
+          <div role="button" tabindex="0">Personal</div>
+        </section>
+        <section>
+          <input type="text" name="list-name" id="list-name" />
+          <button class="create-list">Create a new List</button>
+        </section>
+      </div>
+      <div class="shield"></div>
+      <main>
+        <div class="title">Inbox</div>
+        <div class="content">
+          <div class="todo">
+            <div>
+              <div>
+                <input type="checkbox" id="todo" />
+                <label for="todo">DO laundry</label>
+              </div>
+              <div>
+                <a><i class="fas fa-edit"></i></a>
+                <a><i class="fas fa-trash-alt"></i></a>
+              </div>
+            </div>
+            <hr />
+            <div>
+              <div>
+                <a href=""><i class="fas fa-calendar-day"></i></a>
+                <span>20-01-2022</span>
+              </div>
+              <div>Inbox</div>
+            </div>
+          </div>
+          <div class="todo">
+            <div>
+              <div>
+                <input type="checkbox" id="todo" />
+                <label for="todo">DO laundry</label>
+              </div>
+              <div>
+                <a><i class="fas fa-edit"></i></a>
+                <a><i class="fas fa-trash-alt"></i></a>
+              </div>
+            </div>
+            <div>
+              <div>
+                <a href=""><i class="fas fa-calendar-day"></i></a>
+                <span>20-01-2022</span>
+              </div>
+              <div>Inbox</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="form-container">
+      <form action="#" class="form" id="form">
+        <div>New Task</div>
+        <label for="name">Task Name</label>
+        <input type="text" name="name" id="name" placeholder="Type a task" />
+        <label for="note">Note</label>
+        <textarea name="note" id="note" rows="3"></textarea>
+        <label for="due">Date</label>
+        <input type="date" name="due" id="due" />
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label for="list">List</label>
+        <select name="list" id="list">
+          <option value="Inbox" selected>Inbox</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <button type="submit" form="form">Add Task</button>
+      </form>
+    </div>
+    <div class="update-container">
+      <div>Update Task</div>
+      <form action="#" class="form" id="update">
+        <label for="nameN">Task Name</label>
+        <input type="text" name="name" id="nameN" />
+        <label for="noteN">Note</label>
+        <textarea type="text" name="note" id="noteN"></textarea>
+        <label for="dueN">Due Date</label>
+        <input type="date" name="due" id="dueN" />
+        <label for="priorityN">Priority</label>
+        <select name="priority" id="priorityN">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label for="listN">List</label>
+        <select name="list" id="listN">
+          <option value="Inbox" selected>Inbox</option>
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <button type="submit" form="update">Update</button>
+      </form>
+    </div>
+    <footer>&copy;TheinHein</footer>
+  </body>
+</html>
