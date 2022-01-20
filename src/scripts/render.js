@@ -110,7 +110,7 @@ const render = (() => {
       const del = document.createElement("a");
       del.innerHTML = '<i class="fas fa-trash-alt"></i>';
       del.addEventListener("click", () => {
-        console.log(todo.id);
+        // console.log(todo.id);
         Lists.deleteTodo(todo.id, todo.list);
         renderContent(todo.list);
       });

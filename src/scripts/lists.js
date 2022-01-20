@@ -49,6 +49,11 @@ const Lists = (() => {
 
 export default Lists;
 
+Lists.createList("Inbox");
+Lists.createList("Work");
+Lists.createList("Personal");
+Lists.createList("Today");
+
 // let AllList = {
 //   inbox: [
 //     { name: "do laundry", note: "all clothings", due: "2022-01-22" },
@@ -73,34 +78,3 @@ export default Lists;
 //     { name: "do laundry", note: "all clothings", due: "2022-01-22" },
 //   ],
 // };
-
-Lists.createList("Inbox");
-Lists.createList("Work");
-Lists.createList("Personal");
-Lists.createList("Today");
-
-// let todo1 = createTodo("say prayer", "a lot", "2022-01-24", 3, "work");
-// let todo2 = createTodo("say prayer2", "a lot", "2022-01-24", 3, "work");
-// Lists.addToList(todo1, todo1.list);
-// Lists.addToList(todo2, todo2.list);
-
-// Lists.addToList(
-//   { name: "do laundry", note: "all clothings", due: "2022-01-22" },
-//   "inbox"
-// );
-
-// Lists.addToList(
-//   { name: "hello laundry", note: "all clothings", due: "2022-01-22" },
-//   "work"
-// );
-
-// console.log(Lists.getLists());
-// for (let list in Lists.getLists()) {
-//   console.log(list);
-// }
-
-// console.log(Lists.getList("inbox"));
-// console.log(Lists.getList("work"));
-
-// console.log(Lists.getList("work")[0].editTodo("note", "every night"));
-// console.log(Lists.getList("work")[0]);
