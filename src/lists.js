@@ -1,8 +1,11 @@
 import createTodo from "./todo";
 
 const Lists = (() => {
-  const lists = Object.create(null);
+  let lists = Object.create(null);
 
+  const updateLists = (localLists) => {
+    lists = localLists;
+  };
   const createList = (name) => {
     lists[name] = [];
     return lists;
@@ -40,6 +43,7 @@ const Lists = (() => {
     filterByToday,
     getLists,
     getList,
+    updateLists,
   };
 })();
 
