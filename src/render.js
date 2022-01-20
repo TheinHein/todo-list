@@ -1,4 +1,3 @@
-import { ca } from "date-fns/locale";
 import dom from "./dom";
 import Lists from "./lists";
 

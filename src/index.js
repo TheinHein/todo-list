@@ -1,10 +1,10 @@
-import Lists from "./scripts/lists.js";
-import dom from "./scripts/dom.js";
-import event from "./scripts/event.js";
+import Lists from "./lists.js";
+import dom from "./dom.js";
+import event from "./event.js";
 
-import "./styles/style.css";
-import "./styles/navbar.css";
-import "./styles/form.css";
-import "./styles/side-menu.css";
-import "./styles/todo.css";
-import "./styles/footer.css";
+import "./style.css";
+import "./navbar.css";
+import "./form.css";
+import "./side-menu.css";
+import "./todo.css";
+import "./footer.css";
